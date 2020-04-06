@@ -39,6 +39,9 @@ textarea, select, input, button {
 	padding-top: 30px;
 	font-size: 48px;
 }
+.titulo a{
+	color: #FFEB3B;
+}
 
 .titulo a:visited{
 	color: #FFEB3B;
