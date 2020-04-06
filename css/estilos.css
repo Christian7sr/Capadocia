@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/*Fuente para la pagina, usamos la fuente de la Universidad Nacional de Colombia, Ancizar*/
+@font-face {
+    font-family: Ancizar Sans-regular;
+    src: url('../fonts/Ancizar Sans-Regular.otf');
+}
+
+@font-face {
+    font-family: Ancizar Serif-bold;
+    src: url('../fonts/Ancizar Serif-Bold.otf');
+}
+
+/*Quitamos las margenes internas y externas del cuerpo y los títulos*/
+body, h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+}
+html{
+	scroll-behavior: smooth;
+}
+/*Quitamos el marcado al hacer click*/
+textarea, select, input, button { 
+    outline: none;
+}
+:focus { 
+    outline-color: transparent; 
+    outline-style: none;
+}
+
+/*Estilo para todas las paginas*/
+/*GENERAL*/
+
+/*títulos y subtítulos*/
+.titulo{
+	text-align: center;
+	padding-top: 30px;
+	font-size: 48px;
+}
+
+.titulo a:visited{
+	color: #FFEB3B;
+}
+
+.slogan{
+	text-align: center;
+	padding-bottom: 60px;
+	font-size: 24px;
+	color: rgb(255, 255, 255);
+}
+
+.subtitulo{
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 36px;
+	color: rgb(255, 255, 255);
+}
+.imgCont{
+	background-color: rgb(215, 235, 255);
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.cuerpo{
+	height: 100vh;
+}
+.menu{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.center{
+	background-color: #1f1a1ace;
+	border-radius: 20px;
+	margin: 0 10%;
+	padding: 30px;
+}
+.footer{
+	height: 100px;
+	display: table-cell;
+	vertical-align: middle;
+	background-color: black;
+	width: 100vw;
+	position: -webkit-sticky;
+	position: sticky;
+	top: -3em;
+	padding: 0 20px;
+}
+.footer div{
+	font-size: 18px;
+	font-weight: lighter;
+	color: white;
+	text-align: center;
+}
+/*links*/
+a, a:link, a:visited, a:focus, a:hover, a:active{
+	text-decoration:none;
+}
+
+/*barra de navegación y botones*/
+nav{
+	text-align: center;
+}
+
+.button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	border-radius: 20px;
+	color: rgb(255, 255, 255);
+	padding: 8px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	background-color: rgba(85, 85, 85, 0);
+	font-weight: bold;
+}
+.button0{
+	border: 1px solid #cb22ff;
+}
+
+.button0:hover {
+	transition-duration: 0.4s;
+	background-color: #cb22ff;
+	color: white;
+}
+
+.button1 {
+	border: 1px solid #4CAF50;
+}
+
+.button1:hover {
+	transition-duration: 0.4s;
+	background-color: #4CAF50;
+	color: white;
+}
+
+.button2 {
+	border: 1px solid #008CBA;
+}
+
+.button2:hover {
+	transition-duration: 0.4s;
+	background-color: #008CBA;
+	color: white;
+}
+
+.button3 {
+	border: 1px solid #f44336;
+}
+
+.button3:hover {
+	transition-duration: 0.4s;
+	background-color: #f44336;
+	color: white;
+}
+
+.button4 {
+	border: 1px solid #ff8622;
+}
+
+.button4:hover {
+	transition-duration: 0.4s;
+	background-color: #ff8622;
+	color: white;
+}
+
+.button5 {
+	border: 1px solid #ff229c;
+}
+
+.button5:hover {
+	transition-duration: 0.4s;
+	background-color: #ff229c;
+	color: white;
+}
+.abajo{
+	text-shadow: 0 0 10px black;
+	position: absolute;
+	bottom: 0;
+	transform: translateX(calc(50vw - 13px)) rotate(90deg);
+}
+.abajo a{
+	font-size: 48px;
+	font-weight: bold;
+	color: rgb(0, 255, 242);
+}
+.abajo2 a{
+	font-size: 48px;
+	font-weight: bold;
+	color: rgb(0, 255, 242);
+	text-shadow: 0 0 10px black;
+}
+.abajo2{
+	width: 58px;
+	transform: translateX(calc(50vw - 30px)) rotate(90deg);
+}
+.subir2 a{
+	font-size: 48px;
+	font-weight: bold;
+	color: rgb(0, 255, 242);
+	text-shadow: 0 0 10px black;
+}
+.subir2{
+	width: 58px;
+	transform: translateX(calc(50vw - 30px)) rotate(-90deg);
+}
+.ult{
+	transform: translateY(-50px) translateX(calc(50vw - 30px)) rotate(-90deg);
+	height: 0;
+	width: 0;
+}
+/*creamos el estilo para la pagina principal, centrando el fondo y el contenido*/
+/*pagina Principal(index)*/
+.principal{
+	background-image: url(../imagenes/imagen1.jpg);
+}
+.buttonI{
+	border: 1px solid #cb22ff;
+	background-color: #cb22ff;
+	color: white;
+}
+.introduction{
+	padding-top: 100px;
+	margin: 0;
+	display: block;
+	text-align: center;
+	background-color: #ffffff;
+}
+.introduction h2{
+	padding: 20px;
+	color: rgb(158, 65, 161);
+	font-weight: 400;
+	font-size: 48px;
+}
+.introduction p{
+	color: rgb(207, 46, 221);
+	font-weight: lighter;
+	font-size: 24px;
+	padding: 50px 200px;
+}
+.intrV{
+	background-image: url(../imagenes/imagen16.jpg);
+}
+.video{
+	text-align: center;
+	height: 300px;
+	padding: 200px 0;
+}
+.video iframe{
+	width: 700px;
+	height: 100%;
+}
+/*Para tablet*/
+@media screen and (max-width: 800px){
+	.slogan{
+		padding-bottom: 30px;
+	}
+	.introduction h2{
+		color: rgb(65, 139, 161);
+	}
+	.introduction p{
+		color: rgb(46, 195, 221);
+		padding: 10px 100px;
+	}
+	.video iframe{
+		width: 600px;
+	}
+}
+/*Para Celular*/
+@media screen and (max-width: 500px){
+	.slogan{
+		padding-bottom: 0;
+	}
+	.introduction h2{
+		color: rgb(161, 65, 65);
+	}
+	.introduction p{
+		color: rgb(221, 46, 61);
+		padding: 10px 40px;
+	}
+	.video iframe{
+		width: 300px;
+	}
+}
+@media screen and (max-height: 550px){
+	.titulo{
+		padding-top: 10px;
+	}
+	.center{
+		padding-top: 0;
+	}
+}
+/*Geografía*/
+.geografia{
+	background-image: url(../imagenes/imagen8.jpg);
+}
+.buttonG{
+	border: 1px solid #4CAF50;
+	background-color: #4CAF50;
+	color: white;
+}
+.contentGeo{
+	text-align: center;
+	font-weight: 400;
+	padding: 50px 150px;
+}
+.fairy{
+	height: 100vh;
+	background-image: url(../imagenes/imagen15.jpg);
+}
+.fairy2{
+	height: 100vh;
+	background-image: url(../imagenes/imagen20.jpg);
+}
+.paisaje{
+	text-align: center;
+	height: 100vh;
+	background-image: url(../imagenes/imagen19.jpg);
+}
+
+/*Habitantes*/
+.habitantes{
+	background-image: url(../imagenes/imagen3.jpg);
+}
+.buttonH{
+	border: 1px solid #008CBA;
+	background-color: #008CBA;
+	color: white;
+}
+.mantas{
+	height: 100vh;
+	background-image: url(../imagenes/imagen14.jpg);
+}
+.people1{
+	padding: 50px 100px;
+	display: inline;
+}
+.people1 img{
+	width: 40%;
+	height: auto;
+}
+.people2{
+	height: 100vh;
+	background-image: url(../imagenes/imagen26.jpg);
+}
+/*Actividades*/
+.actividades{
+	background-image: url(../imagenes/imagen13.jpg);
+}
+.buttonA{
+	border: 1px solid #f44336;
+	background-color: #f44336;
+	color: white;
+}
+.senderos{
+	height: 100vh;
+	background-image: url(../imagenes/imagen22.jpg);
+}
+.globos1{
+	height: 100vh;
+	background-image: url(../imagenes/imagen11.jpg);
+}
+.globos2{
+	background-image: url(../imagenes/imagen5.jpg);
+}
+.run{
+	height: 100vh;
+	background-image: url(../imagenes/imagen23.jpg);
+}
+.luisitoTittle{
+	display: block;
+	color: rgb(255, 255, 255);
+	font-size: 36px;
+	transform: translateY(-100px);
+}
+/*Historia*/
+.historia{
+	background-image: url(../imagenes/map1.png);
+}
+.buttonHi{
+	border: 1px solid #ff8622;
+	background-color: #ff8622;
+	color: white;
+}
+.city1{
+	height: 100vh;
+	background-image: url(../imagenes/imagen25.jpg);
+}
+.city2{
+	height: 100vh;
+	background-position: 50% 0;
+	background-image: url(../imagenes/imagen24.jpg);
+}
+.darkCh{
+	height: 100vh;
+	background-image: url(../imagenes/imagen30.jpg);
+}
+/*Referencias*/
+.referencias{
+	background-image: url(../imagenes/imagen4.jpg);
+}
+.buttonR{
+	border: 1px solid #ff229c;
+	background-color: #ff229c;
+	color: white;
+}
