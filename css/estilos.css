@@ -2,12 +2,12 @@
 /*Fuente para la pagina, usamos la fuente de la Universidad Nacional de Colombia, Ancizar*/
 @font-face {
     font-family: Ancizar Sans-regular;
-    src: url('../fonts/Ancizar Sans-Regular.otf');
+    src: url('../fonts/Ancizar\ Sans-Regular.otf');
 }
 
 @font-face {
     font-family: Ancizar Serif-bold;
-    src: url('../fonts/Ancizar Serif-Bold.otf');
+    src: url('../fonts/Ancizar\ Serif-Bold.otf');
 }
 
 /*Quitamos las margenes internas y externas del cuerpo y los títulos*/
@@ -62,7 +62,7 @@ textarea, select, input, button {
 }
 .imgCont{
 	background-color: rgb(215, 235, 255);
-	background-position: 50% 50%;
+	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
