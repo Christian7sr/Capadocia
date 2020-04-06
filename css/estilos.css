@@ -189,7 +189,7 @@ nav{
 .abajo{
 	text-shadow: 0 0 10px black;
 	position: absolute;
-	bottom: 0;
+	bottom: -10px;
 	transform: translateX(calc(50vw - 13px)) rotate(90deg);
 }
 .abajo a{
@@ -218,7 +218,7 @@ nav{
 	transform: translateX(calc(50vw - 30px)) rotate(-90deg);
 }
 .ult{
-	transform: translateY(-50px) translateX(calc(50vw - 30px)) rotate(-90deg);
+	transform: translateY(-20px) translateX(calc(50vw - 30px)) rotate(-90deg);
 	height: 0;
 	width: 0;
 }
