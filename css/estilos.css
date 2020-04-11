@@ -23,9 +23,14 @@
 	--actividades: #f44336;
 	--historia: #ff8622;
 	--referencias: #ff229c;
+	--texto-botones: #ffffff;
 	/*texto*/
 	--subs: rgb(158, 65, 161);
 	--parra: rgb(207, 46, 221);
+	--subs2: rgb(65, 139, 161);;
+	--parra2: rgb(46, 195, 221);;
+	--subs3: rgb(161, 65, 65);
+	--parra3: rgb(221, 46, 61);
 	/*footer*/
 	--fondo-footer: #201f1f;
 	--texto-footer: #fff;
@@ -133,7 +138,7 @@ nav{
 .button {
 	border: none;
 	border-radius: 20px;
-	color: rgb(255, 255, 255);
+	color: var(--texto-botones);
 	padding: 8px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -151,7 +156,7 @@ nav{
 .button0:hover {
 	transition-duration: 0.4s;
 	background-color: var(--inicio);
-	color: white;
+	color: var(--texto-botones);
 }
 
 .button1 {
@@ -161,7 +166,7 @@ nav{
 .button1:hover {
 	transition-duration: 0.4s;
 	background-color: var(--geografia);
-	color: white;
+	color: var(--texto-botones);
 }
 
 .button2 {
@@ -171,7 +176,7 @@ nav{
 .button2:hover {
 	transition-duration: 0.4s;
 	background-color: var(--habitantes);
-	color: white;
+	color: var(--texto-botones);
 }
 
 .button3 {
@@ -181,7 +186,7 @@ nav{
 .button3:hover {
 	transition-duration: 0.4s;
 	background-color: var(--actividades);
-	color: white;
+	color: var(--texto-botones);
 }
 
 .button4 {
@@ -191,7 +196,7 @@ nav{
 .button4:hover {
 	transition-duration: 0.4s;
 	background-color: var(--historia);
-	color: white;
+	color: var(--texto-botones);
 }
 
 .button5 {
@@ -201,7 +206,7 @@ nav{
 .button5:hover {
 	transition-duration: 0.4s;
 	background-color: var(--referencias);
-	color: white;
+	color: var(--texto-botones);
 }
 .abajo{
 	text-shadow: 0 0 10px black;
@@ -239,6 +244,46 @@ nav{
 	height: 0;
 	width: 0;
 }
+/*Para tablet*/
+@media screen and (max-width: 800px){
+	.slogan{
+		padding-bottom: 30px;
+	}
+	.introduction h2{
+		color: var(--subs2);
+	}
+	.introduction p{
+		color: var(--parra2);
+		padding: 10px 100px;
+	}
+	.video iframe{
+		width: 600px;
+	}
+}
+/*Para Celular*/
+@media screen and (max-width: 500px){
+	.slogan{
+		padding-bottom: 0;
+	}
+	.introduction h2{
+		color: var(--subs3);
+	}
+	.introduction p{
+		color: var(--parra3);
+		padding: 10px 40px;
+	}
+	.video iframe{
+		width: 300px;
+	}
+}
+@media screen and (max-height: 550px){
+	.titulo{
+		padding-top: 10px;
+	}
+	.center{
+		padding-top: 0;
+	}
+}
 /*creamos el estilo para la pagina principal, centrando el fondo y el contenido*/
 /*pagina Principal(index)*/
 .principal{
@@ -247,7 +292,7 @@ nav{
 .buttonI{
 	border: 1px solid var(--inicio);
 	background-color: var(--inicio);
-	color: white;
+	color: var(--texto-botones);
 }
 .introduction{
 	padding-top: 100px;
@@ -284,46 +329,6 @@ nav{
 	width: 700px;
 	height: 100%;
 }
-/*Para tablet*/
-@media screen and (max-width: 800px){
-	.slogan{
-		padding-bottom: 30px;
-	}
-	.introduction h2{
-		color: rgb(65, 139, 161);
-	}
-	.introduction p{
-		color: rgb(46, 195, 221);
-		padding: 10px 100px;
-	}
-	.video iframe{
-		width: 600px;
-	}
-}
-/*Para Celular*/
-@media screen and (max-width: 500px){
-	.slogan{
-		padding-bottom: 0;
-	}
-	.introduction h2{
-		color: rgb(161, 65, 65);
-	}
-	.introduction p{
-		color: rgb(221, 46, 61);
-		padding: 10px 40px;
-	}
-	.video iframe{
-		width: 300px;
-	}
-}
-@media screen and (max-height: 550px){
-	.titulo{
-		padding-top: 10px;
-	}
-	.center{
-		padding-top: 0;
-	}
-}
 /*Geografía*/
 .geografia{
 	background-image: url(../imagenes/imagen8.jpg);
@@ -334,7 +339,7 @@ nav{
 .buttonG{
 	border: 1px solid var(--geografia);
 	background-color: var(--geografia);
-	color: white;
+	color: var(--texto-botones);
 }
 .contentGeo{
 	text-align: center;
@@ -365,7 +370,7 @@ nav{
 .buttonH{
 	border: 1px solid var(--habitantes);
 	background-color: var(--habitantes);
-	color: white;
+	color: var(--texto-botones);
 }
 .mantas{
 	height: 100vh;
@@ -393,7 +398,7 @@ nav{
 .buttonA{
 	border: 1px solid var(--actividades);
 	background-color: var(--actividades);
-	color: white;
+	color: var(--texto-botones);
 }
 .senderos{
 	height: 100vh;
@@ -426,7 +431,7 @@ nav{
 .buttonHi{
 	border: 1px solid var(--historia);
 	background-color: var(--historia);
-	color: white;
+	color: var(--texto-botones);
 }
 .city1{
 	height: 100vh;
@@ -451,7 +456,7 @@ nav{
 .buttonR{
 	border: 1px solid var(--referencias);
 	background-color: var(--referencias);
-	color: white;
+	color: var(--texto-botones);
 }
 .mapita{
 	background-attachment: initial;
@@ -466,36 +471,35 @@ nav{
     height: 300px;
     padding: 100px 20px;
 }
-.thanks h2 {
-  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
+.thanks h2{
+	font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
 }
-.thanks ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.thanks ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
-.thanks li {
-  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
-  border-bottom: 1px solid #ccc;
+.thanks li{
+	font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+	border-bottom: 1px solid #ccc;
 }
-.thanks li:last-child {
-  border: none;
+.thanks li:last-child{
+	border: none;
 }
-.thanks li a {
-  text-decoration: none;
-  color: var(--parra);
-  display: block;
-  width: 200px;
- 
-  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
-  transition: font-size 0.3s ease, background-color 0.3s ease;
+.thanks li a{
+	text-decoration: none;
+	color: var(--parra);
+	display: block;
+	width: 200px;
+	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-o-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+	transition: font-size 0.3s ease, background-color 0.3s ease;
 }
-.thanks li a:hover {
-  font-size: 24px;
-  background: #f6f6f6;
+.thanks li a:hover{
+	font-size: 24px;
+	background: #f6f6f6;
 }
