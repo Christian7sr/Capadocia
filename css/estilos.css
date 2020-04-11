@@ -9,7 +9,27 @@
     font-family: Ancizar Serif-bold;
     src: url('../fonts/Ancizar\ Serif-Bold.otf');
 }
-
+/* Valores definidos para los colores*/
+:root{
+	--titulo: #FFEB3B;
+	--slogan: #ffffff;
+	--fondo-pagina: #fff;
+	--flechas: rgb(0, 255, 242);
+	/*menu*/
+	--fondo-menu: #1f1a1ace;
+	--inicio: #cb22ff;
+	--geografia: #4CAF50;
+	--habitantes: #008CBA;
+	--actividades: #f44336;
+	--historia: #ff8622;
+	--referencias: #ff229c;
+	/*texto*/
+	--subs: rgb(158, 65, 161);
+	--parra: rgb(207, 46, 221);
+	/*footer*/
+	--fondo-footer: #201f1f;
+	--texto-footer: #fff;
+}
 /*Quitamos las margenes internas y externas del cuerpo y los títulos*/
 body, h1, h2, h3, h4, h5, h6, p{
 	margin: 0;
@@ -41,28 +61,26 @@ textarea, select, input, button {
 	font-size: 48px;
 }
 .titulo a{
-	color: #FFEB3B;
+	color: var(--titulo);
 }
 
 .titulo a:visited{
-	color: #FFEB3B;
+	color: var(--titulo);
 }
 
 .slogan{
 	text-align: center;
 	padding-bottom: 60px;
 	font-size: 24px;
-	color: rgb(255, 255, 255);
+	color: var(--slogan);
 }
 
 .subtitulo{
 	text-align: center;
 	padding-bottom: 10px;
 	font-size: 36px;
-	color: rgb(255, 255, 255);
 }
 .imgCont{
-	background-color: rgb(215, 235, 255);
 	background-position: center center;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -80,7 +98,7 @@ textarea, select, input, button {
 	transform: translateY(-50%);
 }
 .center{
-	background-color: #1f1a1ace;
+	background-color: var(--fondo-menu);
 	border-radius: 20px;
 	margin: 0 10%;
 	padding: 30px;
@@ -89,7 +107,7 @@ textarea, select, input, button {
 	height: 100px;
 	display: table-cell;
 	vertical-align: middle;
-	background-color: black;
+	background-color: var(--fondo-footer);
 	width: 100vw;
 	position: -webkit-sticky;
 	position: sticky;
@@ -99,7 +117,7 @@ textarea, select, input, button {
 .footer div{
 	font-size: 18px;
 	font-weight: lighter;
-	color: white;
+	color: var(--texto-footer);
 	text-align: center;
 }
 /*links*/
@@ -113,7 +131,6 @@ nav{
 }
 
 .button {
-	background-color: #4CAF50; /* Green */
 	border: none;
 	border-radius: 20px;
 	color: rgb(255, 255, 255);
@@ -128,62 +145,62 @@ nav{
 	font-weight: bold;
 }
 .button0{
-	border: 1px solid #cb22ff;
+	border: 1px solid var(--inicio);
 }
 
 .button0:hover {
 	transition-duration: 0.4s;
-	background-color: #cb22ff;
+	background-color: var(--inicio);
 	color: white;
 }
 
 .button1 {
-	border: 1px solid #4CAF50;
+	border: 1px solid var(--geografia);
 }
 
 .button1:hover {
 	transition-duration: 0.4s;
-	background-color: #4CAF50;
+	background-color: var(--geografia);
 	color: white;
 }
 
 .button2 {
-	border: 1px solid #008CBA;
+	border: 1px solid var(--habitantes);
 }
 
 .button2:hover {
 	transition-duration: 0.4s;
-	background-color: #008CBA;
+	background-color: var(--habitantes);
 	color: white;
 }
 
 .button3 {
-	border: 1px solid #f44336;
+	border: 1px solid var(--actividades);
 }
 
 .button3:hover {
 	transition-duration: 0.4s;
-	background-color: #f44336;
+	background-color: var(--actividades);
 	color: white;
 }
 
 .button4 {
-	border: 1px solid #ff8622;
+	border: 1px solid var(--historia);
 }
 
 .button4:hover {
 	transition-duration: 0.4s;
-	background-color: #ff8622;
+	background-color: var(--historia);
 	color: white;
 }
 
 .button5 {
-	border: 1px solid #ff229c;
+	border: 1px solid var(--referencias);
 }
 
 .button5:hover {
 	transition-duration: 0.4s;
-	background-color: #ff229c;
+	background-color: var(--referencias);
 	color: white;
 }
 .abajo{
@@ -195,12 +212,12 @@ nav{
 .abajo a{
 	font-size: 48px;
 	font-weight: bold;
-	color: rgb(0, 255, 242);
+	color: var(--flechas);
 }
 .abajo2 a{
 	font-size: 48px;
 	font-weight: bold;
-	color: rgb(0, 255, 242);
+	color: var(--flechas);
 	text-shadow: 0 0 10px black;
 }
 .abajo2{
@@ -210,7 +227,7 @@ nav{
 .subir2 a{
 	font-size: 48px;
 	font-weight: bold;
-	color: rgb(0, 255, 242);
+	color: var(--flechas);
 	text-shadow: 0 0 10px black;
 }
 .subir2{
@@ -228,8 +245,8 @@ nav{
 	background-image: url(../imagenes/imagen1.jpg);
 }
 .buttonI{
-	border: 1px solid #cb22ff;
-	background-color: #cb22ff;
+	border: 1px solid var(--inicio);
+	background-color: var(--inicio);
 	color: white;
 }
 .introduction{
@@ -237,23 +254,23 @@ nav{
 	margin: 0;
 	display: block;
 	text-align: center;
-	background-color: #ffffff;
+	background-color: var(--fondo-pagina);
 }
 .introduction h2{
 	padding: 20px;
-	color: rgb(158, 65, 161);
+	color: var(--subs);
 	font-weight: lighter;
 	font-size: 36px;
 }
 .introduction p{
-	color: rgb(207, 46, 221);
+	color: var(--parra);
 	font-weight: lighter;
 	font-size: 18px;
 	padding: 50px 200px;
 }
 .introduction p a{
 	text-decoration: underline;
-  	color: rgb(207, 46, 221);
+  	color: var(--parra);
 }
 .intrV{
 	background-image: url(../imagenes/imagen16.jpg);
@@ -312,11 +329,11 @@ nav{
 	background-image: url(../imagenes/imagen8.jpg);
 }
 .geo{
-	color: #4CAF50;
+	color: var(--geografia);
 }
 .buttonG{
-	border: 1px solid #4CAF50;
-	background-color: #4CAF50;
+	border: 1px solid var(--geografia);
+	background-color: var(--geografia);
 	color: white;
 }
 .contentGeo{
@@ -343,11 +360,11 @@ nav{
 	background-image: url(../imagenes/imagen3.jpg);
 }
 .hab{
-	color: #008CBA;
+	color: var(--habitantes);
 }
 .buttonH{
-	border: 1px solid #008CBA;
-	background-color: #008CBA;
+	border: 1px solid var(--habitantes);
+	background-color: var(--habitantes);
 	color: white;
 }
 .mantas{
@@ -371,11 +388,11 @@ nav{
 	background-image: url(../imagenes/imagen13.jpg);
 }
 .act{
-	color: #f44336;
+	color: var(--actividades);
 }
 .buttonA{
-	border: 1px solid #f44336;
-	background-color: #f44336;
+	border: 1px solid var(--actividades);
+	background-color: var(--actividades);
 	color: white;
 }
 .senderos{
@@ -387,7 +404,7 @@ nav{
 	background-image: url(../imagenes/imagen11.jpg);
 }
 .globos2{
-	background-image: url(../imagenes/imagen5.jpg);
+	background-image: url(../imagenes/imagen12.jpg);
 }
 .run{
 	height: 100vh;
@@ -404,11 +421,11 @@ nav{
 	background-image: url(../imagenes/map1.png);
 }
 .his{
-	color: #ff8622;
+	color: var(--historia);
 }
 .buttonHi{
-	border: 1px solid #ff8622;
-	background-color: #ff8622;
+	border: 1px solid var(--historia);
+	background-color: var(--historia);
 	color: white;
 }
 .city1{
@@ -429,18 +446,18 @@ nav{
 	background-image: url(../imagenes/imagen4.jpg);
 }
 .ref{
-	color: #ff229c;
+	color: var(--referencias);
 }
 .buttonR{
-	border: 1px solid #ff229c;
-	background-color: #ff229c;
+	border: 1px solid var(--referencias);
+	background-color: var(--referencias);
 	color: white;
 }
 .mapita{
 	background-attachment: initial;
 	background-size: contain;
 	-webkit-background-size: contain;
-	background-color: rgba(255, 255, 255, 0);
+	background-color: var(--fondo-pagina);
 	background-image: url(../imagenes/mapa\ grafica\ interactiva.png);
 	height: 100vh;
 }
@@ -468,7 +485,7 @@ nav{
 }
 .thanks li a {
   text-decoration: none;
-  color: rgb(207, 46, 221);
+  color: var(--parra);
   display: block;
   width: 200px;
  
