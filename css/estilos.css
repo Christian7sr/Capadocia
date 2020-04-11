@@ -14,6 +14,7 @@
 body, h1, h2, h3, h4, h5, h6, p{
 	margin: 0;
 	padding: 0;
+	font-family: Ancizar Sans-regular;
 }
 body{
 	width: 100%;
@@ -188,7 +189,7 @@ nav{
 .abajo{
 	text-shadow: 0 0 10px black;
 	position: absolute;
-	bottom: 0;
+	bottom: -10px;
 	transform: translateX(calc(50vw - 13px)) rotate(90deg);
 }
 .abajo a{
@@ -217,7 +218,7 @@ nav{
 	transform: translateX(calc(50vw - 30px)) rotate(-90deg);
 }
 .ult{
-	transform: translateY(-50px) translateX(calc(50vw - 30px)) rotate(-90deg);
+	transform: translateY(-20px) translateX(calc(50vw - 30px)) rotate(-90deg);
 	height: 0;
 	width: 0;
 }
@@ -241,13 +242,13 @@ nav{
 .introduction h2{
 	padding: 20px;
 	color: rgb(158, 65, 161);
-	font-weight: 400;
+	font-weight: lighter;
 	font-size: 36px;
 }
 .introduction p{
 	color: rgb(207, 46, 221);
 	font-weight: lighter;
-	font-size: 24px;
+	font-size: 18px;
 	padding: 50px 200px;
 }
 .introduction p a{
@@ -310,6 +311,9 @@ nav{
 .geografia{
 	background-image: url(../imagenes/imagen8.jpg);
 }
+.geo{
+	color: #4CAF50;
+}
 .buttonG{
 	border: 1px solid #4CAF50;
 	background-color: #4CAF50;
@@ -338,6 +342,9 @@ nav{
 .habitantes{
 	background-image: url(../imagenes/imagen3.jpg);
 }
+.hab{
+	color: #008CBA;
+}
 .buttonH{
 	border: 1px solid #008CBA;
 	background-color: #008CBA;
@@ -362,6 +369,9 @@ nav{
 /*Actividades*/
 .actividades{
 	background-image: url(../imagenes/imagen13.jpg);
+}
+.act{
+	color: #f44336;
 }
 .buttonA{
 	border: 1px solid #f44336;
@@ -393,6 +403,9 @@ nav{
 .historia{
 	background-image: url(../imagenes/map1.png);
 }
+.his{
+	color: #ff8622;
+}
 .buttonHi{
 	border: 1px solid #ff8622;
 	background-color: #ff8622;
@@ -414,6 +427,9 @@ nav{
 /*Referencias*/
 .referencias{
 	background-image: url(../imagenes/imagen4.jpg);
+}
+.ref{
+	color: #ff229c;
 }
 .buttonR{
 	border: 1px solid #ff229c;
