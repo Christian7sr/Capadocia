@@ -1,0 +1,505 @@
+@charset "UTF-8";
+/*Fuente para la pagina, usamos la fuente de la Universidad Nacional de Colombia, Ancizar*/
+@font-face {
+    font-family: Ancizar Sans-regular;
+    src: url('../fonts/Ancizar\ Sans-Regular.otf');
+}
+
+@font-face {
+    font-family: Ancizar Serif-bold;
+    src: url('../fonts/Ancizar\ Serif-Bold.otf');
+}
+/* Valores definidos para los colores*/
+:root{
+	--titulo: rgb(255, 115, 197);
+	--slogan: #525252;
+	--fondo-pagina: #525252;
+	--flechas: rgb(238, 255, 0);
+	/*menu*/
+	--fondo-menu: #f5f5f5ce;
+	--inicio: #936af1;
+	--geografia: rgb(240, 130, 102);
+	--habitantes: rgb(235, 88, 227);
+	--actividades: #dbe64e;
+	--historia: #22cbff;
+	--referencias: #45bd45;
+	--texto-botones: #525252;
+	/*texto*/
+	--subs: rgb(104, 214, 109);
+	--parra: rgb(157, 207, 144);
+	--subs2: rgb(209, 235, 93);
+	--parra2: rgb(235, 252, 80);
+	--subs3: rgb(245, 96, 96);
+	--parra3: rgb(230, 125, 134);
+	/*footer*/
+	--fondo-footer: #d6d6d6;
+	--texto-footer: #201f1f;
+}
+/*Quitamos las margenes internas y externas del cuerpo y los títulos*/
+body, h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+	font-family: Ancizar Sans-regular;
+}
+body{
+	width: 100%;
+}
+html{
+	scroll-behavior: smooth;
+}
+/*Quitamos el marcado al hacer click*/
+textarea, select, input, button { 
+    outline: none;
+}
+:focus { 
+    outline-color: transparent; 
+    outline-style: none;
+}
+
+/*Estilo para todas las paginas*/
+/*GENERAL*/
+
+/*títulos y subtítulos*/
+.titulo{
+	text-align: center;
+	padding-top: 30px;
+	font-size: 48px;
+}
+.titulo a{
+	color: var(--titulo);
+}
+
+.titulo a:visited{
+	color: var(--titulo);
+}
+
+.slogan{
+	text-align: center;
+	padding-bottom: 60px;
+	font-size: 24px;
+	color: var(--slogan);
+}
+
+.subtitulo{
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 36px;
+}
+.imgCont{
+	background-position: center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.cuerpo{
+	height: 100vh;
+}
+.menu{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.center{
+	background-color: var(--fondo-menu);
+	border-radius: 20px;
+	margin: 0 10%;
+	padding: 30px;
+}
+.footer{
+	height: 100px;
+	display: table-cell;
+	vertical-align: middle;
+	background-color: var(--fondo-footer);
+	width: 100vw;
+	position: -webkit-sticky;
+	position: sticky;
+	top: -3em;
+	padding: 0 20px;
+}
+.footer div{
+	font-size: 18px;
+	font-weight: lighter;
+	color: var(--texto-footer);
+	text-align: center;
+}
+/*links*/
+a, a:link, a:visited, a:focus, a:hover, a:active{
+	text-decoration:none;
+}
+
+/*barra de navegación y botones*/
+nav{
+	text-align: center;
+}
+
+.button {
+	border: none;
+	border-radius: 20px;
+	color: var(--texto-botones);
+	padding: 8px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	background-color: rgba(85, 85, 85, 0);
+	font-weight: bold;
+}
+.button0{
+	border: 1px solid var(--inicio);
+}
+
+.button0:hover {
+	transition-duration: 0.4s;
+	background-color: var(--inicio);
+	color: var(--texto-botones);
+}
+
+.button1 {
+	border: 1px solid var(--geografia);
+}
+
+.button1:hover {
+	transition-duration: 0.4s;
+	background-color: var(--geografia);
+	color: var(--texto-botones);
+}
+
+.button2 {
+	border: 1px solid var(--habitantes);
+}
+
+.button2:hover {
+	transition-duration: 0.4s;
+	background-color: var(--habitantes);
+	color: var(--texto-botones);
+}
+
+.button3 {
+	border: 1px solid var(--actividades);
+}
+
+.button3:hover {
+	transition-duration: 0.4s;
+	background-color: var(--actividades);
+	color: var(--texto-botones);
+}
+
+.button4 {
+	border: 1px solid var(--historia);
+}
+
+.button4:hover {
+	transition-duration: 0.4s;
+	background-color: var(--historia);
+	color: var(--texto-botones);
+}
+
+.button5 {
+	border: 1px solid var(--referencias);
+}
+
+.button5:hover {
+	transition-duration: 0.4s;
+	background-color: var(--referencias);
+	color: var(--texto-botones);
+}
+.abajo{
+	text-shadow: 0 0 10px black;
+	position: absolute;
+	bottom: -10px;
+	transform: translateX(calc(50vw - 13px)) rotate(90deg);
+}
+.abajo a{
+	font-size: 48px;
+	font-weight: bold;
+	color: var(--flechas);
+}
+.abajo2 a{
+	font-size: 48px;
+	font-weight: bold;
+	color: var(--flechas);
+	text-shadow: 0 0 10px black;
+}
+.abajo2{
+	width: 58px;
+	transform: translateX(calc(50vw - 30px)) rotate(90deg);
+}
+.subir2 a{
+	font-size: 48px;
+	font-weight: bold;
+	color: var(--flechas);
+	text-shadow: 0 0 10px black;
+}
+.subir2{
+	width: 58px;
+	transform: translateX(calc(50vw - 30px)) rotate(-90deg);
+}
+.ult{
+	transform: translateY(-20px) translateX(calc(50vw - 30px)) rotate(-90deg);
+	height: 0;
+	width: 0;
+}
+/*Para tablet*/
+@media screen and (max-width: 800px){
+	.slogan{
+		padding-bottom: 30px;
+	}
+	.introduction h2{
+		color: var(--subs2);
+	}
+	.introduction p{
+		color: var(--parra2);
+		padding: 10px 100px;
+	}
+	.video iframe{
+		width: 600px;
+	}
+}
+/*Para Celular*/
+@media screen and (max-width: 500px){
+	.slogan{
+		padding-bottom: 0;
+	}
+	.introduction h2{
+		color: var(--subs3);
+	}
+	.introduction p{
+		color: var(--parra3);
+		padding: 10px 40px;
+	}
+	.video iframe{
+		width: 300px;
+	}
+}
+@media screen and (max-height: 550px){
+	.titulo{
+		padding-top: 10px;
+	}
+	.center{
+		padding-top: 0;
+	}
+}
+/*creamos el estilo para la pagina principal, centrando el fondo y el contenido*/
+/*pagina Principal(index)*/
+.principal{
+	background-image: url(../imagenes/imagen10.jpg);
+}
+.buttonI{
+	border: 1px solid var(--inicio);
+	background-color: var(--inicio);
+	color: var(--texto-botones);
+}
+.introduction{
+	padding-top: 100px;
+	margin: 0;
+	display: block;
+	text-align: center;
+	background-color: var(--fondo-pagina);
+}
+.introduction h2{
+	padding: 20px;
+	color: var(--subs);
+	font-weight: lighter;
+	font-size: 36px;
+}
+.introduction p{
+	color: var(--parra);
+	font-weight: lighter;
+	font-size: 18px;
+	padding: 50px 200px;
+}
+.introduction p a{
+	text-decoration: underline;
+  	color: var(--parra);
+}
+.intrV{
+	background-image: url(../imagenes/imagen6.jpg);
+}
+.video{
+	text-align: center;
+	height: 300px;
+	padding: 200px 0;
+}
+.video iframe{
+	width: 700px;
+	height: 100%;
+}
+/*Geografía*/
+.geografia{
+	background-image: url(../imagenes/imagen9.jpg);
+}
+.geo{
+	color: var(--geografia);
+}
+.buttonG{
+	border: 1px solid var(--geografia);
+	background-color: var(--geografia);
+	color: var(--texto-botones);
+}
+.contentGeo{
+	text-align: center;
+	font-weight: 400;
+	padding: 50px 150px;
+}
+.fairy{
+	height: 100vh;
+	background-image: url(../imagenes/imagen15.jpg);
+}
+.fairy2{
+	height: 100vh;
+	background-image: url(../imagenes/imagen20.jpg);
+}
+.paisaje{
+	text-align: center;
+	height: 100vh;
+	background-image: url(../imagenes/imagen19.jpg);
+}
+
+/*Habitantes*/
+.habitantes{
+	background-image: url(../imagenes/imagen26.jpg);
+}
+.hab{
+	color: var(--habitantes);
+}
+.buttonH{
+	border: 1px solid var(--habitantes);
+	background-color: var(--habitantes);
+	color: var(--texto-botones);
+}
+.mantas{
+	height: 100vh;
+	background-image: url(../imagenes/imagen14.jpg);
+}
+.people1{
+	padding: 50px 100px;
+	display: inline;
+}
+.people1 img{
+	width: 40%;
+	height: auto;
+}
+.people2{
+	height: 100vh;
+	background-image: url(../imagenes/imagen3.jpg);
+}
+/*Actividades*/
+.actividades{
+	background-image: url(../imagenes/imagen37.jpg);
+}
+.act{
+	color: var(--actividades);
+}
+.buttonA{
+	border: 1px solid var(--actividades);
+	background-color: var(--actividades);
+	color: var(--texto-botones);
+}
+.senderos{
+	height: 100vh;
+	background-image: url(../imagenes/imagen22.jpg);
+}
+.globos1{
+	height: 100vh;
+	background-image: url(../imagenes/imagen12.jpg);
+}
+.globos2{
+	background-image: url(../imagenes/imagen11.jpg);
+}
+.run{
+	height: 100vh;
+	background-image: url(../imagenes/imagen23.jpg);
+}
+.luisitoTittle{
+	display: block;
+	color: rgb(255, 255, 255);
+	font-size: 36px;
+	transform: translateY(-100px);
+}
+/*Historia*/
+.historia{
+	background-image: url(../imagenes/imagen34.jpg);
+}
+.his{
+	color: var(--historia);
+}
+.buttonHi{
+	border: 1px solid var(--historia);
+	background-color: var(--historia);
+	color: var(--texto-botones);
+}
+.city1{
+	height: 100vh;
+	background-image: url(../imagenes/imagen21.jpg);
+}
+.city2{
+	height: 100vh;
+	background-position: 50% 0;
+	background-image: url(../imagenes/imagen36.jpg);
+}
+.darkCh{
+	height: 100vh;
+	background-image: url(../imagenes/imagen30.jpg);
+}
+/*Referencias*/
+.referencias{
+	background-image: url(../imagenes/imagen35.jpg);
+}
+.ref{
+	color: var(--referencias);
+}
+.buttonR{
+	border: 1px solid var(--referencias);
+	background-color: var(--referencias);
+	color: var(--texto-botones);
+}
+.mapita{
+	background-attachment: initial;
+	background-size: contain;
+	-webkit-background-size: contain;
+	background-color: var(--fondo-pagina);
+	background-image: url(../imagenes/mapa\ grafica\ interactiva.png);
+	height: 100vh;
+}
+.thanks{
+	display: inline-grid;
+    height: 300px;
+    padding: 100px 20px;
+}
+.thanks h2{
+	font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.thanks ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.thanks li{
+	font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+	border-bottom: 1px solid #ccc;
+}
+.thanks li:last-child{
+	border: none;
+}
+.thanks li a{
+	text-decoration: none;
+	color: var(--parra);
+	display: block;
+	width: 200px;
+	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-o-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+	transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+.thanks li a:hover{
+	font-size: 24px;
+	background: #f6f6f6;
+}
