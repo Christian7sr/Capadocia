@@ -64,6 +64,9 @@ textarea, select, input, button {
 	background-color: rgb(215, 235, 255);
 	background-position: center center;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -239,13 +242,17 @@ nav{
 	padding: 20px;
 	color: rgb(158, 65, 161);
 	font-weight: 400;
-	font-size: 48px;
+	font-size: 36px;
 }
 .introduction p{
 	color: rgb(207, 46, 221);
 	font-weight: lighter;
 	font-size: 24px;
 	padding: 50px 200px;
+}
+.introduction p a{
+	text-decoration: underline;
+  	color: rgb(207, 46, 221);
 }
 .intrV{
 	background-image: url(../imagenes/imagen16.jpg);
@@ -412,4 +419,50 @@ nav{
 	border: 1px solid #ff229c;
 	background-color: #ff229c;
 	color: white;
+}
+.mapita{
+	background-attachment: initial;
+	background-size: contain;
+	-webkit-background-size: contain;
+	background-color: rgba(255, 255, 255, 0);
+	background-image: url(../imagenes/mapa\ grafica\ interactiva.png);
+	height: 100vh;
+}
+.thanks{
+	display: inline-grid;
+    height: 300px;
+    padding: 100px 20px;
+}
+.thanks h2 {
+  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.thanks ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.thanks li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+.thanks li:last-child {
+  border: none;
+}
+.thanks li a {
+  text-decoration: none;
+  color: rgb(207, 46, 221);
+  display: block;
+  width: 200px;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+.thanks li a:hover {
+  font-size: 24px;
+  background: #f6f6f6;
 }
