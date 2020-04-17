@@ -247,41 +247,41 @@ nav{
 /*Para tablet*/
 @media screen and (max-width: 800px){
 	.slogan{
-		padding-bottom: 30px;
+		padding-bottom: 30px !important;
 	}
 	.introduction h2{
-		color: var(--subs2);
+		color: var(--subs2) !important;
 	}
 	.introduction p{
-		color: var(--parra2);
-		padding: 10px 100px;
+		color: var(--parra2) !important;
+		padding: 10px 100px !important;
 	}
 	.video iframe{
-		width: 600px;
+		width: 600px !important;
 	}
 }
 /*Para Celular*/
 @media screen and (max-width: 500px){
 	.slogan{
-		padding-bottom: 0;
+		padding-bottom: 0 !important;
 	}
 	.introduction h2{
-		color: var(--subs3);
+		color: var(--subs3) !important;
 	}
 	.introduction p{
-		color: var(--parra3);
-		padding: 10px 40px;
+		color: var(--parra3) !important;
+		padding: 10px 40px !important;
 	}
 	.video iframe{
-		width: 300px;
+		width: 300px !important;
 	}
 }
 @media screen and (max-height: 550px){
 	.titulo{
-		padding-top: 10px;
+		padding-top: 10px !important;
 	}
 	.center{
-		padding-top: 0;
+		padding-top: 0 !important;
 	}
 }
 /*creamos el estilo para la pagina principal, centrando el fondo y el contenido*/
